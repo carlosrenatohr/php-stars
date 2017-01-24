@@ -1,0 +1,18 @@
+<% include ../layouts/header.html %>
+<div class="row">
+    <h1>Welcome user #<%= hola %></h1>
+    <a href="/stars" class="btn btn-success">See stars</a>
+</div>
+<div class="row">
+    <h2 class="">USERS LIST</h2>
+    <div class="col-md-10 col-md-offset-2">
+        <% var users = [1,2,3]; %>
+        <ul class="list-group">
+            <% for (i in users) { %>
+            <li class="list-group-item"><%= i %></li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+
+<% include ../layouts/header.html %>
